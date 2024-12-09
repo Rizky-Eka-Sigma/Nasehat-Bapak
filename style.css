@@ -1,0 +1,129 @@
+/* Gaya untuk seluruh halaman */
+body {
+    font-family: 'futura', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color:#000000;
+}
+
+/* Header */
+header {
+    background-image: url(Ayah.jpeg.jpeg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Menu navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative; /* Agar efek animasi bekerja dengan baik */
+}
+
+/* Efek animasi pada link menu */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; /* Memberikan ruang sekitar teks */
+    display: inline-block; /* Membuat elemen bisa diberikan padding */
+    transition: all 0.3s ease; /* Menambahkan transisi pada perubahan */
+}
+
+/* Animasi saat hover */
+nav ul li a:hover {
+    background-color: #ff6347; /* Menambahkan perubahan warna latar saat hover */
+    transform: scale(1.1); /* Memberikan efek zoom in */
+    border-radius: 5px; /* Memberikan sudut melengkung */
+}
+
+/* Animasi saat klik (active) */
+nav ul li a:active {
+    transform: scale(0.95); /* Efek zoom out saat tombol diklik */
+    background-color: #ff4500; /* Warna saat aktif */
+}
+
+/* Menambahkan efek transisi pada menu ketika focus */
+nav ul li a:focus {
+    outline: none; /* Menghilangkan outline default */
+    background-color: #ff6347; /* Warna saat elemen fokus */
+    transform: scale(1.05); /* Sedikit zoom-in saat fokus */
+}
+
+
+/* Konten utama */
+.content {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;  /* Memastikan elemen dalam .content ditata secara vertikal */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    align-items: center;     /* Memusatkan elemen secara horizontal */
+    height: 100vh; 
+}
+
+.content h2 {
+    color: #333;
+}
+
+.content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Tombol */
+button {
+    background-color: #1fbdd9;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+/* Footer */
+footer {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Tambahkan di file style.css */
+
+#kontak p {
+    word-wrap: break-word; /* Agar teks panjang dipecah dan tidak melampaui batas */
+    padding: 10px; /* Memberikan ruang pada elemen agar tidak terhalang */
+    font-size: 16px; /* Menjaga ukuran font agar tidak terlalu kecil */
+    position: relative;
+    z-index: 1; /* Memastikan link tetap terlihat */
+    text-align: center;
+}
+
+a {
+    color: #0066cc; /* Menentukan warna link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah muncul saat hover */
+}
+
